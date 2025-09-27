@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Télécharger temp_data.zip</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+            background-color: #f5f5f5;
+        }
+        
+        .download-btn {
+            background-color: #007bff;
+            color: white;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: bold;
+        }
+        
+        .download-btn:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+        }
+        
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .file-info {
+            background-color: #e9f7fe;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #007bff;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        .file-icon {
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📦 Téléchargement du fichier ZIP</h1>
+        
+        <div class="file-info">
+            <strong>Fichier :</strong> temp_data.zip<br>
+            <strong>Type :</strong> Archive ZIP<br>
+            <strong>Contenu :</strong> Données temporaires
+        </div>
+        
+        <p>Cliquez sur le bouton ci-dessous pour télécharger l'archive :</p>
+        
+        <!-- Bouton de téléchargement -->
+        <a href="temp_data.zip" download="temp_data.zip" class="download-btn">
+            <span class="file-icon">📥</span>
+            Télécharger temp_data.zip
+        </a>
+        
+        <p style="margin-top: 25px; color: #666; font-size: 14px;">
+            ⚠️ Assurez-vous que le fichier "temp_data.zip" se trouve dans le même dossier que cette page HTML
+        </p>
+    </div>
+</body>
+</html>
